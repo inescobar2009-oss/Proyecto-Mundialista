@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mundialia — Tu agencia para el Mundial 2026</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Canvas de partículas de fondo -->
+  <canvas id="particles"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-main">MUNDI</span><span class="logo-accent">ALIA</span>
+        <div class="logo-sub">MUNDIAL 2026</div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a></li>
+        <li><a href="#vuelos" class="nav-link" data-section="vuelos">Vuelos</a></li>
+        <li><a href="#alojamientos" class="nav-link" data-section="alojamientos">Alojamientos</a></li>
+        <li><a href="#paquetes" class="nav-link" data-section="paquetes">Paquetes</a></li>
+        <li><a href="#actividades" class="nav-link" data-section="actividades">Actividades</a></li>
+        <li><a href="#contacto" class="nav-link" data-section="contacto">Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        FIFA WORLD CUP 2026 · USA · CANADA · MEXICO
+      </div>
+      <h1 class="hero-title">
+        <span class="line-1">TU VIAJE AL</span>
+        <span class="line-2">MUNDIAL</span>
+        <span class="line-3">EMPIEZA ACÁ</span>
+      </h1>
+      <p class="hero-subtitle">
+        Vuelos · Alojamiento · Paquetes · Experiencias únicas en Dallas, Texas.<br/>
+        Argentina en el Mundial — vívilo en vivo.
+      </p>
+      <div class="hero-cta">
+        <a href="#paquetes" class="btn btn-primary">Ver Paquetes</a>
+        <a href="#vuelos" class="btn btn-outline">Buscar Vuelos</a>
+      </div>
+      <div class="hero-dates">
+        <div class="date-card">
+          <span class="date-label">Salida</span>
+          <span class="date-value">13 JUN 2026</span>
+        </div>
+        <div class="date-divider">→</div>
+        <div class="date-card">
+          <span class="date-label">Destino</span>
+          <span class="date-value">DALLAS, TX</span>
+        </div>
+        <div class="date-divider">→</div>
+        <div class="date-card">
+          <span class="date-label">Regreso</span>
+          <span class="date-value">28 JUN 2026</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Deslizá</span>
+      <div class="scroll-line"></div>
+    </div>
+    <!-- Estadísticas flotantes -->
+    <div class="stat-bubble stat-1">
+      <span class="stat-num">48</span>
+      <span class="stat-txt">Equipos</span>
+    </div>
+    <div class="stat-bubble stat-2">
+      <span class="stat-num">16</span>
+      <span class="stat-txt">Días en Dallas</span>
+    </div>
+    <div class="stat-bubble stat-3">
+      <span class="stat-num">3</span>
+      <span class="stat-txt">Países sede</span>
+    </div>
+  </section>
+
+  <!-- VUELOS -->
+  <section class="section" id="vuelos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">✈ Vuelos</span>
+        <h2 class="section-title">Buenos Aires → Dallas → Buenos Aires</h2>
+        <p class="section-sub">Viajá en las mejores condiciones del 13 al 28 de junio de 2026</p>
+      </div>
+
+      <div class="route-visual">
+        <div class="route-city">
+          <div class="city-code">BUE</div>
+          <div class="city-name">Buenos Aires</div>
+          <div class="city-date">13 JUN 2026</div>
+        </div>
+        <div class="route-line">
+          <div class="plane-icon">✈</div>
+          <div class="route-track"></div>
+        </div>
+        <div class="route-city">
+          <div class="city-code">DFW</div>
+          <div class="city-name">Dallas Fort Worth</div>
+          <div class="city-date">28 JUN 2026</div>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card flight-card" data-aos="fade-up">
+          <div class="card-badge">Recomendado</div>
+          <div class="card-logo">TurismCity</div>
+          <div class="card-title">Vuelo Económico</div>
+          <p class="card-desc">Cabina Economy · Ida y vuelta BUE–DFW. Precios desde Argentina con salida el 13/06.</p>
+          <ul class="card-features">
+            <li>✓ Equipaje incluido</li>
+            <li>✓ Asientos seleccionables</li>
+            <li>✓ Precio en USD</li>
+          </ul>
+          <a href="https://www.turismocity.com.ar/vuelos/resultados-a-dallas-DFW?cabinClass=Economy&currency=USD&s=BUE-DFW.13-06-2026.DFW-BUE.28-06-2026" target="_blank" class="card-btn">Ver Vuelos →</a>
+        </div>
+
+        <div class="card flight-card" data-aos="fade-up" data-delay="100">
+          <div class="card-logo">Despegar</div>
+          <div class="card-title">Comparador de Tarifas</div>
+          <p class="card-desc">Compará precios en tiempo real para el tramo Buenos Aires a Dallas en todas las aerolíneas disponibles.</p>
+          <ul class="card-features">
+            <li>✓ Múltiples aerolíneas</li>
+            <li>✓ Alertas de precio</li>
+            <li>✓ Sin cargo de servicio</li>
+          </ul>
+          <a href="https://www.despegar.com.ar" target="_blank" class="card-btn">Buscar en Despegar →</a>
+        </div>
+
+        <div class="card flight-card" data-aos="fade-up" data-delay="200">
+          <div class="card-logo">AlMundo</div>
+          <div class="card-title">Paquete Vuelo + Hotel</div>
+          <p class="card-desc">Combiná vuelo y alojamiento en un solo paquete mundialista con financiación en pesos.</p>
+          <ul class="card-features">
+            <li>✓ Financiación 12 cuotas</li>
+            <li>✓ Seguro de viaje</li>
+            <li>✓ Asistencia 24/7</li>
+          </ul>
+          <a href="https://almundo.com.ar/promociones/eventos/mundial-2026" target="_blank" class="card-btn">Ver en AlMundo →</a>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <span class="info-icon">ℹ</span>
+        <p><strong>Tip Mundialia:</strong> Reservá con anticipación. Los vuelos para el Mundial 2026 tienen alta demanda. La ruta BUE–DFW suele hacer escala en Lima, Bogotá o Miami. Controlá los horarios de los partidos de Argentina antes de confirmar fechas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALOJAMIENTOS -->
+  <section class="section section-alt" id="alojamientos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🏨 Alojamientos</span>
+        <h2 class="section-title">Dónde quedarse en Dallas</h2>
+        <p class="section-sub">Opciones para 2 adultos + 2 menores · 13 al 28 de junio de 2026</p>
+      </div>
+
+      <div class="tabs-container">
+        <div class="tabs">
+          <button class="tab active" data-tab="hoteles">Hoteles</button>
+          <button class="tab" data-tab="departamentos">Departamentos</button>
+          <button class="tab" data-tab="airbnb">Airbnb</button>
+        </div>
+
+        <div class="tab-content active" id="tab-hoteles">
+          <div class="cards-grid">
+            <div class="card" data-aos="fade-up">
+              <div class="card-badge">Booking.com</div>
+              <div class="card-icon">🏩</div>
+              <div class="card-title">Hoteles en Dallas</div>
+              <p class="card-desc">Amplia selección de hoteles 3, 4 y 5 estrellas en el centro de Dallas y zonas cercanas al AT&T Stadium. Base 2 adultos + 2 menores.</p>
+              <ul class="card-features">
+                <li>✓ Cancelación gratuita disponible</li>
+                <li>✓ Desayuno incluido en opciones</li>
+                <li>✓ Filtro por precio y zona</li>
+              </ul>
+              <a href="https://www.booking.com/searchresults.es.html?ss=Dallas&checkin=2026-06-13&checkout=2026-06-28&group_adults=2&group_children=2&age=10&age=11&order=price" target="_blank" class="card-btn">Ver Hoteles en Booking →</a>
+            </div>
+            <div class="card highlight-card" data-aos="fade-up" data-delay="100">
+              <div class="card-badge accent">Mejor ubicación</div>
+              <div class="card-icon">⭐</div>
+              <div class="card-title">Zona Downtown Dallas</div>
+              <p class="card-desc">Hoteles en el corazón de la ciudad, a pasos de Reunion Tower, el AT&T Stadium y el transporte público. Ideal para moverse al estadio.</p>
+              <ul class="card-features">
+                <li>✓ Acceso a DART (metro)</li>
+                <li>✓ Restaurantes y bares cerca</li>
+                <li>✓ A 20 min del estadio</li>
+              </ul>
+              <a href="https://www.booking.com/searchresults.es.html?ss=Downtown+Dallas&checkin=2026-06-13&checkout=2026-06-28&group_adults=2&group_children=2" target="_blank" class="card-btn">Buscar en Downtown →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tab-departamentos">
+          <div class="cards-grid">
+            <div class="card" data-aos="fade-up">
+              <div class="card-badge">Booking.com</div>
+              <div class="card-icon">🏠</div>
+              <div class="card-title">Departamentos en Dallas</div>
+              <p class="card-desc">Departamentos completos con cocina y living para mayor comodidad familiar. Más espacio y privacidad para 2 adultos + 2 menores.</p>
+              <ul class="card-features">
+                <li>✓ Cocina equipada</li>
+                <li>✓ Mayor privacidad</li>
+                <li>✓ Más económico a largo plazo</li>
+              </ul>
+              <a href="https://www.booking.com/searchresults.es.html?ss=Dallas&checkin=2026-06-13&checkout=2026-06-28&group_adults=2&group_children=2&nflt=ht_id%3D220" target="_blank" class="card-btn">Ver Departamentos →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tab-airbnb">
+          <div class="cards-grid">
+            <div class="card" data-aos="fade-up">
+              <div class="card-badge accent">Airbnb</div>
+              <div class="card-icon">🏡</div>
+              <div class="card-title">Casas y departamentos</div>
+              <p class="card-desc">Alojamientos únicos en Dallas para familias. Precios filtrados hasta USD 4.500 para el período completo. Base 2 adultos + 2 menores.</p>
+              <ul class="card-features">
+                <li>✓ Precio máx. USD 4.500 (15 noches)</li>
+                <li>✓ Cocina y espacios comunes</li>
+                <li>✓ Experiencia local</li>
+              </ul>
+              <a href="https://www.airbnb.com.ar/s/Dallas--Texas--EE.-UU./homes?checkin=2026-06-13&checkout=2026-06-28&adults=2&children=2&price_max=4501" target="_blank" class="card-btn">Ver en Airbnb →</a>
+            </div>
+            <div class="card" data-aos="fade-up" data-delay="100">
+              <div class="card-icon">💡</div>
+              <div class="card-title">Consejo de Alojamiento</div>
+              <p class="card-desc">Para 15 noches en Dallas durante el Mundial, los departamentos y casas en Airbnb suelen ser más económicos que los hoteles y ofrecen más comodidad para familias con chicos.</p>
+              <ul class="card-features">
+                <li>✓ Zonas recomendadas: Uptown, Deep Ellum, Oak Lawn</li>
+                <li>✓ Evitá las fechas de partidos para check-in</li>
+                <li>✓ Reservá lo antes posible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAQUETES -->
+  <section class="section" id="paquetes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">⚽ Paquetes Mundialistas</span>
+        <h2 class="section-title">Todo incluido para el Mundial</h2>
+        <p class="section-sub">Las mejores operadoras con paquetes especiales para Argentina en USA 2026</p>
+      </div>
+
+      <div class="packages-grid">
+
+        <div class="package-card featured" data-aos="zoom-in">
+          <div class="pkg-header">
+            <span class="pkg-tag">TurismCity</span>
+            <div class="pkg-fire">🔥 Más vendido</div>
+          </div>
+          <h3 class="pkg-title">ARG vs Argelia — Kansas City</h3>
+          <p class="pkg-date">📅 Salida: 15 de junio 2026</p>
+          <p class="pkg-desc">Paquete completo para el debut de Argentina contra Argelia en Kansas City. Incluye vuelo, alojamiento y entrada al partido.</p>
+          <div class="pkg-includes">
+            <span class="include-tag">✈ Vuelo</span>
+            <span class="include-tag">🏨 Hotel</span>
+            <span class="include-tag">🎟 Entrada</span>
+            <span class="include-tag">🚌 Traslados</span>
+          </div>
+          <a href="https://www.turismocity.com.ar/paquetes-turisticos/ID-505641-Mundial-2026-ARG-vs-Argelia-en-Kansas/Junio-2026?r=2&s=15-06-2026" target="_blank" class="card-btn btn-gold">Ver Paquete →</a>
+        </div>
+
+        <div class="package-card" data-aos="zoom-in" data-delay="100">
+          <div class="pkg-header">
+            <span class="pkg-tag">TurismCity</span>
+          </div>
+          <h3 class="pkg-title">Fase de Grupos Completa</h3>
+          <p class="pkg-date">📅 Salida: 15 de junio 2026</p>
+          <p class="pkg-desc">Viví toda la fase de grupos de Argentina. El paquete más completo para los fanáticos que no quieren perderse nada.</p>
+          <div class="pkg-includes">
+            <span class="include-tag">✈ Vuelo</span>
+            <span class="include-tag">🏨 Hotel</span>
+            <span class="include-tag">🎟 Entradas</span>
+          </div>
+          <a href="https://www.turismocity.com.ar/paquetes-turisticos/ID-505682-Mundial-2026-Fase-de-grupos/Junio-2026?r=2&s=15-06-2026" target="_blank" class="card-btn">Ver Paquete →</a>
+        </div>
+
+        <div class="package-card" data-aos="zoom-in" data-delay="150">
+          <div class="pkg-header">
+            <span class="pkg-tag">TurismCity</span>
+          </div>
+          <h3 class="pkg-title">ARG vs Austria y Jordania</h3>
+          <p class="pkg-date">📅 Salida: 20 de junio 2026</p>
+          <p class="pkg-desc">Paquete para los últimos dos partidos de la fase de grupos de Argentina. Ideal para quienes no pueden viajar desde el inicio.</p>
+          <div class="pkg-includes">
+            <span class="include-tag">✈ Vuelo</span>
+            <span class="include-tag">🏨 Hotel</span>
+            <span class="include-tag">🎟 Entradas</span>
+          </div>
+          <a href="https://www.turismocity.com.ar/paquetes-turisticos/ID-505642-Mundial-2026-ARG-vs-Austria-y-Jordania/Junio-2026?r=2&s=20-06-2026" target="_blank" class="card-btn">Ver Paquete →</a>
+        </div>
+
+        <div class="package-card" data-aos="zoom-in" data-delay="200">
+          <div class="pkg-header">
+            <span class="pkg-tag">AlMundo</span>
+          </div>
+          <h3 class="pkg-title">Paquetes AlMundo 2026</h3>
+          <p class="pkg-date">📅 Junio 2026</p>
+          <p class="pkg-desc">Amplia variedad de paquetes para el Mundial con financiación en pesos. Consultas y reservas en español con soporte local.</p>
+          <div class="pkg-includes">
+            <span class="include-tag">✈ Vuelo</span>
+            <span class="include-tag">🏨 Hotel</span>
+            <span class="include-tag">💳 Financiación</span>
+          </div>
+          <a href="https://almundo.com.ar/promociones/eventos/mundial-2026" target="_blank" class="card-btn">Ver en AlMundo →</a>
+        </div>
+
+        <div class="package-card" data-aos="zoom-in" data-delay="250">
+          <div class="pkg-header">
+            <span class="pkg-tag">Delfos</span>
+          </div>
+          <h3 class="pkg-title">Paquetes Delfos Turismo</h3>
+          <p class="pkg-date">📅 Junio 2026</p>
+          <p class="pkg-desc">Operadora especializada en viajes de fútbol con más de 20 años de experiencia. Paquetes premium con guía en español.</p>
+          <div class="pkg-includes">
+            <span class="include-tag">✈ Vuelo</span>
+            <span class="include-tag">🏨 Hotel</span>
+            <span class="include-tag">🎟 Entrada</span>
+            <span class="include-tag">🗣 Guía</span>
+          </div>
+          <a href="https://www.delfos.tur.ar/es/landing/11702/mundial-2026-paquetes" target="_blank" class="card-btn">Ver en Delfos →</a>
+        </div>
+
+        <div class="package-card" data-aos="zoom-in" data-delay="300">
+          <div class="pkg-header">
+            <span class="pkg-tag">Sudameria</span>
+          </div>
+          <h3 class="pkg-title">Paquetes Sudameria 2026</h3>
+          <p class="pkg-date">📅 Junio 2026</p>
+          <p class="pkg-desc">Paquetes especiales de la operadora Sudameria para el Mundial. Opciones para distintos presupuestos y duración de viaje.</p>
+          <div class="pkg-includes">
+            <span class="include-tag">✈ Vuelo</span>
+            <span class="include-tag">🏨 Hotel</span>
+            <span class="include-tag">🎟 Entrada</span>
+          </div>
+          <a href="https://landing.sudameria.com/paquetes-mundial-2026" target="_blank" class="card-btn">Ver en Sudameria →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVIDADES -->
+  <section class="section section-alt" id="actividades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🗺 Actividades</span>
+        <h2 class="section-title">Qué hacer en Dallas</h2>
+        <p class="section-sub">Museos, atracciones, bici y mucho más para disfrutar entre partidos</p>
+      </div>
+
+      <!-- CityPASS destacado -->
+      <div class="citypass-banner" data-aos="fade-up">
+        <div class="citypass-left">
+          <div class="citypass-icon">🎫</div>
+          <div>
+            <div class="citypass-title">Dallas CityPASS</div>
+            <div class="citypass-sub">La forma más inteligente de conocer Dallas</div>
+          </div>
+        </div>
+        <div class="citypass-center">
+          <div class="citypass-price">US$ 64</div>
+          <div class="citypass-saving">Ahorro del 56%</div>
+          <p class="citypass-desc">Incluye Perot Museum, Reunion Tower GeO-Deck y 2 atracciones a elección. El mejor valor para turistas.</p>
+        </div>
+        <a href="https://www.citypass.com/dallas" target="_blank" class="btn btn-gold">Comprar CityPASS →</a>
+      </div>
+
+      <!-- Tabla de atracciones -->
+      <div class="attractions-grid">
+
+        <div class="attraction-card" data-aos="fade-up">
+          <div class="attr-img">🏛</div>
+          <div class="attr-info">
+            <h4>Perot Museum of Science</h4>
+            <span class="attr-type">Museo de Ciencias Naturales</span>
+            <div class="attr-price">US$ 27 <span class="attr-included">· Incluido en CityPASS</span></div>
+            <a href="https://www.perotmuseum.org" target="_blank" class="attr-link">Ver más →</a>
+          </div>
+        </div>
+
+        <div class="attraction-card" data-aos="fade-up" data-delay="50">
+          <div class="attr-img">🗼</div>
+          <div class="attr-info">
+            <h4>Reunion Tower GeO-Deck</h4>
+            <span class="attr-type">Mirador 360° de Dallas</span>
+            <div class="attr-price">US$ 25–30 <span class="attr-included">· Incluido en CityPASS</span></div>
+            <a href="https://www.reuniontower.com" target="_blank" class="attr-link">Ver más →</a>
+          </div>
+        </div>
+
+        <div class="attraction-card free-card" data-aos="fade-up" data-delay="100">
+          <div class="attr-img">🎨</div>
+          <div class="attr-info">
+            <h4>Dallas Museum of Art (DMA)</h4>
+            <span class="attr-type">Museo de Arte Mundial</span>
+            <div class="attr-price free-price">GRATIS <span class="attr-included">· Acceso general sin costo</span></div>
+            <a href="https://www.dma.org" target="_blank" class="attr-link">Ver más →</a>
+          </div>
+        </div>
+
+        <div class="attraction-card" data-aos="fade-up" data-delay="150">
+          <div class="attr-img">🐠</div>
+          <div class="attr-info">
+            <h4>Dallas World Aquarium</h4>
+            <span class="attr-type">Acuario y Selva Tropical</span>
+            <div class="attr-price">US$ 34,95 adultos / US$ 24,95 menores (3–12 años)</div>
+            <a href="https://www.dwazoo.com" target="_blank" class="attr-link">Ver más →</a>
+          </div>
+        </div>
+
+        <div class="attraction-card" data-aos="fade-up" data-delay="200">
+          <div class="attr-img">🌳</div>
+          <div class="attr-info">
+            <h4>Dallas Arboretum</h4>
+            <span class="attr-type">Jardín Botánico y Lago</span>
+            <div class="attr-price">US$ 21,95–25,95 <span class="attr-included">· Más barato Lun–Jue</span></div>
+            <a href="https://www.dallasarboretum.org" target="_blank" class="attr-link">Ver más →</a>
+          </div>
+        </div>
+
+        <div class="attraction-card" data-aos="fade-up" data-delay="250">
+          <div class="attr-img">🧱</div>
+          <div class="attr-info">
+            <h4>LEGOLAND Discovery Center</h4>
+            <span class="attr-type">Parque Temático Indoor</span>
+            <div class="attr-price">US$ 21,99 / Combo con SEA LIFE US$ 29,99</div>
+            <a href="https://www.legolanddiscoverycenter.com" target="_blank" class="attr-link">Ver más →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bicicletas -->
+      <div class="bikes-section" data-aos="fade-up">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">🚴 Bicicletas</span>
+          <h3 class="section-title" style="font-size: 1.8rem;">Recorrí Dallas en bici — Katy Trail</h3>
+          <p class="section-sub">El Katy Trail es una de las mejores ciclovías urbanas de EE.UU. Alquilá tu bici y recorré la ciudad entre partidos.</p>
+        </div>
+        <div class="bikes-grid">
+          <div class="bike-card" data-aos="fade-up">
+            <div class="bike-icon">🚲</div>
+            <h4>Katy Trail Bike Tours</h4>
+            <p>Alquiler de bicicletas especial para el Mundial 2026. El clásico del trail de Dallas.</p>
+            <a href="https://katytrailbiketours.com/bike-rentals-2026/" target="_blank" class="card-btn">Reservar →</a>
+          </div>
+          <div class="bike-card" data-aos="fade-up" data-delay="100">
+            <div class="bike-icon">⚡</div>
+            <h4>Pedego Electric Bikes</h4>
+            <p>Bicicletas eléctricas para un paseo sin esfuerzo por Dallas. Ideal para los días de calor texano.</p>
+            <a href="https://dealers.pedegoelectricbikes.com/pages/dealers/dallas" target="_blank" class="card-btn">Ver opciones →</a>
+          </div>
+          <div class="bike-card" data-aos="fade-up" data-delay="200">
+            <div class="bike-icon">🛴</div>
+            <h4>InCity Wheels</h4>
+            <p>Scooters y bicicletas para moverse por el downtown de Dallas de forma rápida y económica.</p>
+            <a href="https://incitywheels.com/" target="_blank" class="card-btn">Ver opciones →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown-section">
+    <div class="container">
+      <h2 class="countdown-title">Faltan para el Mundial 2026</h2>
+      <div class="countdown-grid" id="countdown">
+        <div class="count-item">
+          <span class="count-num" id="days">--</span>
+          <span class="count-label">Días</span>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="count-item">
+          <span class="count-num" id="hours">--</span>
+          <span class="count-label">Horas</span>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="count-item">
+          <span class="count-num" id="minutes">--</span>
+          <span class="count-label">Minutos</span>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="count-item">
+          <span class="count-num" id="seconds">--</span>
+          <span class="count-label">Segundos</span>
+        </div>
+      </div>
+      <p class="countdown-sub">El torneo arranca el 11 de junio de 2026</p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">📩 Contacto</span>
+        <h2 class="section-title">¿Listo para viajar al Mundial?</h2>
+        <p class="section-sub">Dejanos tus datos y un asesor de Mundialia te contacta en menos de 24 horas</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-form-wrap" data-aos="fade-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" placeholder="Juan Pérez" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="juan@email.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefono">Teléfono / WhatsApp</label>
+                <input type="tel" id="telefono" placeholder="+54 11 1234-5678" />
+              </div>
+              <div class="form-group">
+                <label for="viajeros">¿Cuántos viajan?</label>
+                <select id="viajeros">
+                  <option value="">Seleccioná</option>
+                  <option value="1">Solo</option>
+                  <option value="2">2 personas</option>
+                  <option value="3">3–4 personas</option>
+                  <option value="5+">5 o más</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="interes">¿Qué te interesa?</label>
+              <select id="interes">
+                <option value="">Seleccioná una opción</option>
+                <option value="vuelo">Solo vuelo</option>
+                <option value="alojamiento">Solo alojamiento</option>
+                <option value="paquete">Paquete completo</option>
+                <option value="actividades">Actividades y tours</option>
+                <option value="todo">Todo incluido</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje (opcional)</label>
+              <textarea id="mensaje" rows="4" placeholder="Contanos qué necesitás o cualquier duda que tengas..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Quiero ir al Mundial →</button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✓</div>
+            <h3>¡Mensaje enviado!</h3>
+            <p>Te contactamos en menos de 24 horas. ¡Argentina campeón!</p>
+          </div>
+        </div>
+
+        <div class="contact-info" data-aos="fade-left">
+          <div class="info-card">
+            <h3>Mundialia</h3>
+            <p>Tu agencia de confianza para vivir el Mundial 2026 en primera persona. Viajes a medida para hinchas argentinos.</p>
+          </div>
+          <div class="contact-items">
+            <div class="contact-item">
+              <span class="ci-icon">📍</span>
+              <div>
+                <strong>Destino principal</strong>
+                <p>Dallas, Texas — AT&T Stadium</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="ci-icon">📅</span>
+              <div>
+                <strong>Fechas del viaje</strong>
+                <p>13 al 28 de junio de 2026</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="ci-icon">⚽</span>
+              <div>
+                <strong>Argentina en el Mundial</strong>
+                <p>Fase de grupos + fases finales</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="ci-icon">💬</span>
+              <div>
+                <strong>Atención</strong>
+                <p>WhatsApp · Email · Videollamada</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn">Instagram</a>
+            <a href="#" class="social-btn">WhatsApp</a>
+            <a href="#" class="social-btn">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-main">MUNDI</span><span class="logo-accent">ALIA</span>
+          </div>
+          <p>La agencia de los hinchas argentinos para el Mundial 2026.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#vuelos">Vuelos</a></li>
+            <li><a href="#alojamientos">Alojamientos</a></li>
+            <li><a href="#paquetes">Paquetes</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Operadoras</h4>
+          <ul>
+            <li><a href="https://www.turismocity.com.ar" target="_blank">TurismCity</a></li>
+            <li><a href="https://almundo.com.ar" target="_blank">AlMundo</a></li>
+            <li><a href="https://www.delfos.tur.ar" target="_blank">Delfos</a></li>
+            <li><a href="https://landing.sudameria.com" target="_blank">Sudameria</a></li>
+            <li><a href="https://www.booking.com" target="_blank">Booking.com</a></li>
+            <li><a href="https://www.airbnb.com.ar" target="_blank">Airbnb</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Mundialia — Agencia de Turismo para el Mundial FIFA 2026 · Argentina 🇦🇷</p>
+        <p class="footer-disclaimer">Los precios y disponibilidad son referenciales. Verificá en cada operadora al momento de reservar.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
